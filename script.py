@@ -2,9 +2,9 @@
 import os
 import img2pdf
 
-image_dir = "/Users/dorianjackson/Library/CloudStorage/OneDrive-Personal/Career/Projects/Images to PDF/images_to_PDF/images_to_PDF"
+image_dir = "/Users/dorianjackson/Library/CloudStorage/OneDrive-Personal/Projects/images_to_PDF"
 
-#os.path.join
+#this line gets a file path for each file in the folder that is a JPEG.
 jpg_files = [os.path.join(image_dir, i) for i in os.listdir(image_dir) if i.endswith(".jpg")]
 
 if jpg_files:  # Check if the list is not empty
